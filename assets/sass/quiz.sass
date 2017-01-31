@@ -1,0 +1,84 @@
+@import 'mixins/background'
+
+body
+  @include background
+
+/* Main displey of quiz page */
+.quizComponent
+  // question's text
+  .quizTitle
+    width: 90%
+    margin: 0 auto
+    margin-top: 30px
+    background-color: #E5FF7E
+    padding: 15px
+    border: 2px solid #898A46
+    border-radius: 16px
+    text-align: center
+    color: black
+    font-size: 60px
+
+  // choices of question
+  .choiceDisplayList
+    .choiceDisplay
+      position: relative
+      width: 100%
+      height: 30%
+      margin: 7px 10px
+      background-color: #E4FFE6
+      // border of question's choice
+      border: solid
+      border-width: 2px
+      border-color: #03C100
+      border-radius: 20px
+
+      // choice marker
+      h1
+        position: absolute
+        padding-top: 13px
+        margin: 10px
+        width: 70px
+        height: 70px
+        text-align: center
+        color: white
+        border-radius: 50%
+        border: 1px solid white
+
+      // choice text
+      p
+        font-size: 45px
+        margin: 20px auto
+        text-align: center
+
+      // choice img
+      img
+        display: block
+        margin: 0 auto
+
+      // vote number
+      .voteNumber
+        position: absolute
+        padding: 10px
+        text-align: right
+        font-size: 30px
+        width: 100px
+        bottom: 5px
+        right: 5px
+        background-color: #FFB4F6
+        border: 2px solid white
+        border-radius: 10px
+
+/* Quiz title */
+.quizTitleComponent
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+
+  h1
+    text-align: center
+    right: 0
+    left: 0
+    margin: auto
+    position: absolute
+    top: 35%
